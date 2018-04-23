@@ -336,6 +336,25 @@
 			</div>
 		</section>
 	</footer>
+  <div class="modal-write">
+      <h2 class="visually-hidden">Форма отправки письма</h2>
+      <button class="modal-close" type="button" aria-label="кнопка закрыть">Закрыть</button>
+      <form class="form-write-us" action="https://echo.htmlacademy.ru" method="POST">
+        <p class="appointment-item">
+          <label for="name">Ваше имя:</label>
+          <input type="text" id="name" name="name" placeholder="Представьтесь, пожалуйста" aria-label="поле ввода имени">
+        </p>
+        <p class="appointment-item">
+          <label for="email">Ваш e-mail:</label>
+          <input type="text" id="email" name="email" placeholder="Для отправки ответа" aria-label="поле ввода электронного ящика">
+        </p>
+        <p class="appointment-item">
+          <label for="mail-text">Текст письма:</label>
+          <textarea name="mail-text" id="mail-text" cols="70" rows="5" placeholder="В свободной форме" aria-label="поле ввода текста"></textarea>
+        </p>
+        <button class="btn btn-form-letter" type="submit" aria-label="кнопка отправить">Отправить</button>
+      </form>
+    </div>
   <script src="js/script.js"></script>
   <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </body>
