@@ -6,8 +6,8 @@ body {
   line-height: 24px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  width: 1200px;
-  margin: 0 auto;
+  min-width: 1200px;
+  margin: 0;
   padding: 0;
   color: #000000;
   background-color: #ffffff;
@@ -49,4 +49,24 @@ input[type="radio"].visually-hidden {
   border-radius: 3px;
   background-color: #fb565a;*/
 }
+.container {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
 /*gloabal*/
+/*header*/
+.main-header {
+  background-color: #f3f7f9;
+  margin-bottom: 59px;
+}
+.order {
+  background-color: #293449;
+}
+.main-header-navigation {
+  background-color: #293449;
+}
+.navigation-list {
+  list-style: none;
+  display: flex;
+}
