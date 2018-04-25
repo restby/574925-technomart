@@ -36,18 +36,16 @@ input[type="radio"].visually-hidden {
           clip-path: inset(100%);
 }
 .btn {
-  /*font-size: 16px;
-  line-height: 18px;
   display: block;
-  width: 240px;
-  padding: 16px 0;
   text-align: center;
-  text-decoration: none;
-  text-transform: uppercase;
-  color: #ffffff;
-  border: none;
+  vertical-align: middle;
+  border: 0;
   border-radius: 3px;
-  background-color: #fb565a;*/
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #ffffff;
+  text-transform: uppercase;
 }
 .container {
   width: 940px;
@@ -195,7 +193,7 @@ input[type="radio"].visually-hidden {
   margin-right: 20px;
   width: 300px;
 }
-.header-contacts-columns:nth-child(3) {
+.header-contacts-columns:last-child {
   margin-right: 0;
 }
 .contacts-description {
@@ -233,6 +231,7 @@ input[type="radio"].visually-hidden {
 }
 .contacts-user-list {
   margin: 0;
+  margin-left: 19px;
   padding: 0;
   list-style: none;
   display: flex;
@@ -279,7 +278,7 @@ input[type="radio"].visually-hidden {
 .user-item:nth-child(1) a:active::before {
   opacity: 0.3;
 }
-.main-header .container {
+.main-header .order + .container {
   padding-bottom: 65px;
 }
 .main-header-navigation {
@@ -332,32 +331,69 @@ input[type="radio"].visually-hidden {
 .promo-item:nth-child(1) {
   background-color: #ffbf47;
   margin-bottom: 20px;
+  padding-top: 23px;
 }
 .promo-item:nth-child(2) {
   background-color: #3bbce3;
   margin-bottom: 20px;
+  padding-top: 23px;
 }
 .promo-item:nth-child(3) {
   background-color: #dc91d8;
   margin-bottom: 20px;
+  padding-top: 23px;
 }
 .promo-item:nth-child(5) {
+  padding-left: 0;
+}
+.promo-services-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.promo-services-item {
+  width: 300px;
+  padding-left: 24px;
+  padding-top: 23px;
+  display: flex;
+  box-sizing: border-box;
+}
+.promo-services-item:nth-child(1) {
   background-color: #8ed78f;
   margin-bottom: 20px;
 }
-.promo-item:nth-child(6) {
+.promo-services-item:nth-child(2) {
   background-color: #ffc047;
 }
-
+.promo-left-col h3,
+.promo-services-left-col h3 {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0;
+  margin-bottom: 17px;
+}
+.promo-left-col a,
+.promo-services-left-col a {
+  display: block;
+  margin-bottom: 22px;
+}
+.promo-right-col,
+.promo-services-right-col {
+  padding-top: 8px;
+  padding-left: 53px;
+}
 .promo-item:nth-child(3),
-.promo-item:nth-child(5),
-.promo-item:nth-child(6) {
+.promo-item:nth-child(5) {
   margin-right: 0;
 }
 .promo-item:nth-child(4) {
   width: 620px;
 }
-
+.btn-promo {
+  background-color: rgba(0, 0, 0, 0.1);
+}
 
 
 
