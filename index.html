@@ -15,9 +15,10 @@
 			<h2 class="visually-hidden">Панель корзины</h2>
 			<div class="container">
 				<b class="header-logo">Техномарт</b>
-				<form action="https://echo.htmlacademy.ru" method="GET" aria-label="форма поиска по названию">
-					<button type="submit">искать</button>
-					<input type="text">
+				<form class="form-title-search" action="https://echo.htmlacademy.ru" method="GET" aria-label="форма поиска по названию">
+					<!-- <button type="submit">искать</button>
+          <label for="title-search"></label> -->
+					<input class="area-search" id="title-search" type="text">
 				</form>
 				<ul class="cart-list">
 					<li class="cart-item">
@@ -37,7 +38,8 @@
 				<h2 class="visually-hidden">Контактные данные</h2>
 				<div class="header-contacts-columns">
 					<p class="contacts-description">
-						Интернет-магазин строительных материалов и инструментов для ремонта
+						Интернет-магазин<br>строительных материалов<br>
+            и инструментов для ремонта
 					</p>
 				</div>
 				<div class="header-contacts-columns">
@@ -280,8 +282,8 @@
 			<h2 class="visually-hidden">Навигация по сайту</h2>
 			<div class="container">
 				<div class="navigation-top-wrapper">
-					<b class="footer-logo">Техномарт</b>
 					<ul class="footer-navigation-list">
+            <li class="footer-navigation-item"><b class="footer-logo">Техномарт</b></li>
 						<li class="footer-navigation-item"><a href="#">Компания</a></li>
 						<li class="footer-navigation-item"><a href="#">Новости</a></li>
 						<li class="footer-navigation-item"><a href="catalog.html">Каталог</a></li>
@@ -337,7 +339,7 @@
 			</div>
 		</section>
 	</footer>
-  <div class="modal-write">
+<!--   <div class="modal-write">
       <h2 class="visually-hidden">Форма отправки письма</h2>
       <button class="modal-close" type="button" aria-label="кнопка закрыть">Закрыть</button>
       <form class="form-write-us" action="https://echo.htmlacademy.ru" method="POST">
@@ -355,7 +357,7 @@
         </p>
         <button class="btn btn-form-letter" type="submit" aria-label="кнопка отправить">Отправить</button>
       </form>
-    </div>
+  </div> -->
   <script src="js/script.js"></script>
   <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </body>

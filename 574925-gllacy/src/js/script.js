@@ -1,1 +1,0 @@
-var modalWindow = document.querySelector('body');
