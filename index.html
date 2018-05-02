@@ -16,8 +16,8 @@
       <div class="container">
         <b class="header-logo">Техномарт</b>
         <form class="form-title-search" action="https://echo.htmlacademy.ru" method="GET" aria-label="форма поиска по названию">
-          <!-- <button type="submit">искать</button>
-          <label for="title-search"></label> -->
+          <!-- <button type="submit"><span class="visually-hidden">искать</span></button> 
+          	или просто повесить иконку в паддинг-->
           <input class="area-search" id="title-search" type="text">
         </form>
         <ul class="cart-list">
@@ -116,16 +116,20 @@
           </li>
           <li class="promo-item">
             <div class="promo-slider">
-              <div class="promo-slide1">
+            	<button class="btn-slider-prev"></button>
+          		<button class="btn-slider-next"></button>
+          		<button class="btn-slider-indicator"></button>
+          		<button class="btn-slider-indicator indicator-active"></button>
+              <!-- <div class="promo-slide1">
                 <h3>Перфораторы</h3>
                 <p>Настоящие мужские игрушки</p>
                 <a href="catalog.html" class="btn btn-promo-slider">Открыть каталог</a>
-              </div>
-              <!-- <div class="promo-slide2">
+              </div> -->
+              <div class="promo-slide2">
                 <h3>Дрели</h3>
                 <p>Соседям на радость</p>
                 <a href="catalog.html" class="btn btn-promo-slider">Открыть каталог</a>
-              </div> -->
+              </div>
             </div>
           </li>
           <li class="promo-item">
@@ -173,7 +177,7 @@
         <ul class="popular-goods-list">
           <li class="popular-goods-item">
             <div class="img-popular-good">
-              <!-- <img src="img/popular-good-bfg9000.png" alt=""> -->
+              <img src="img/popular-good-bfg9000.png" alt="">
               <div class="btn-group">
                 <a href="#" class="btn-buy">Купить</a>
                 <a href="#" class="btn-mark">В закладки</a>
@@ -186,6 +190,10 @@
           <li class="popular-goods-item">
             <div class="img-popular-good">
               <img src="img/popular-good-bfg3000.png" alt="">
+              <div class="btn-group">
+                <a href="#" class="btn-buy">Купить</a>
+                <a href="#" class="btn-mark">В закладки</a>
+              </div>
             </div>
             <p>Перфоратор BOSCH BFG 3000</p>
             <s>22500 Р.</s>
@@ -194,6 +202,10 @@
           <li class="popular-goods-item">
             <div class="img-popular-good">
               <img src="img/popular-good-bfg6000.png" alt="">
+              <div class="btn-group">
+                <a href="#" class="btn-buy">Купить</a>
+                <a href="#" class="btn-mark">В закладки</a>
+              </div>
             </div>
             <p>Перфоратор BOSCH BFG 6000</p>
             <s>30500 Р.</s>
@@ -202,6 +214,10 @@
           <li class="popular-goods-item">
             <div class="img-popular-good">
               <img src="img/popular-good-bfg2000.png" alt="">
+              <div class="btn-group">
+                <a href="#" class="btn-buy">Купить</a>
+                <a href="#" class="btn-mark">В закладки</a>
+              </div>
             </div>
             <p>Перфоратор BOSCH BFG 2000</p>
             <s></s><!--убрать и маргинами выровнять -->
@@ -250,9 +266,9 @@
         <div class="services-wrapper">
           <div class="services-left-col">
             <ul class="services-list">
-              <li class="services-item"><a class="btn-item btn-active-item" href="#">Доставка</a></li>
-              <li class="services-item"><a class="btn-item" href="#">Гарантия</a></li>
-              <li class="services-item"><a class="btn-item" href="#">Кредит</a></li>
+              <li class="services-item"><a class="btn-services-item btn-active-item" href="#">Доставка</a></li>
+              <li class="services-item"><a class="btn-services-item" href="#">Гарантия</a></li>
+              <li class="services-item"><a class="btn-services-item" href="#">Кредит</a></li>
             </ul>
           </div>
           <div class="services-right-col">
