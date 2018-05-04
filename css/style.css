@@ -776,12 +776,6 @@ text-decoration: none;;
 .btn-promo-slider {
   width: 195px;
 }
-
-
-
-
-
-
 .popular-goods {
   margin-bottom: 21px;
 }
@@ -1226,11 +1220,17 @@ text-decoration: none;;
 }
 /*main-index*/
 /*header-catalog*/
+.catalog {
+  margin-bottom: 0;
+}
 .personal-area {
   display: block;
   width: 100%;
-  padding-top: 14px;
-  padding-bottom: 12px;
+  padding-top: 13px;
+  padding-bottom: 14px;
+  padding-left: 13px;
+  padding-right: 10px;
+  margin-bottom: 10px;
   background-color: #ffffff;
   font-size: 21px;
   line-height: 21px;
@@ -1238,9 +1238,189 @@ text-decoration: none;;
   color: #000000;
   box-sizing: border-box;
 }
+.personal-area:active {
+  opacity: 0.3;
+}
+.user-icon-avatar {
+  margin-right: 12px;
+}
+.user-icon-logout {
+  margin-left: 28px;
+}
+.personal-area:hover .user-icon-avatar > path,
+.personal-area:focus .user-icon-avatar > path {
+  fill: #32425c;
+}
+.personal-area:hover .user-icon-logout > g,
+.personal-area:focus .user-icon-logout > g {
+  fill: #32425c;
+}
+.personal-area-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  position: relative;
+}
+.personal-area-list::before {
+  position: absolute;
+  content: "";
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  top: 12px;
+  left: 108px;
+  background-color: #32425c;
+}
+.personal-area-item:nth-child(1) {
+  margin-left: 19px;
+  margin-right: 32px;
+}
+
+.personal-area-item a {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #32425c;
+  text-decoration: underline;
+}
+.personal-area-item a:hover,
+.personal-area-item a:focus {
+  color: #ee3643;
+}
+.personal-area-item a:active {
+  color: #32425c;
+  opacity: 0.3;
+}
 /*header-catalog*/
 /*main-catalog*/
+.breadcrumbs-list {
+  margin: 0;
+  padding: 0;
+  padding-top: 22px;
+  margin-bottom: 25px;
+  list-style: none;
+  display: flex;
+}
+.breadcrumbs-item {
+  position: relative;
+}
+.breadcrumbs-item:nth-child(1) {
+  padding-right: 40px;
+}
+.breadcrumbs-item:nth-child(2) {
+  padding-right: 39px;
+}
+.breadcrumbs-item:nth-child(3) {
+  padding-right: 43px;
+}
+.breadcrumbs-item:nth-child(1)::after {
+  position: absolute;
+  content: "";
+  width: 8px;
+  height: 12px;
+  top: 6px;
+  right: 19px;
+  background-image: url('../img/breadcrumbs-icon-step.min.svg');
+}
+.breadcrumbs-item:nth-child(2)::after {
+  position: absolute;
+  content: "";
+  width: 8px;
+  height: 12px;
+  top: 6px;
+  right: 16px;
+  background-image: url('../img/breadcrumbs-icon-step.min.svg');
+}
+.breadcrumbs-item:nth-child(3)::after {
+  position: absolute;
+  content: "";
+  width: 8px;
+  height: 12px;
+  top: 6px;
+  right: 18px;
+  background-image: url('../img/breadcrumbs-icon-step.min.svg');
+}
+.breadcrumbs-item a{
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #000000;
+  text-transform: uppercase;
+}
+.catalog-wrapper {
+  margin-bottom: 60px;
+}
+.catalog-wrapper h2 {
+  margin: 0;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #32425c;
+  text-transform: uppercase;
+  background-color: #f2f6f8;
+  padding-top: 32px;
+  padding-bottom: 34px;
+  padding-left: 28px;
+}
 
+
+.pagination-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+.pagination-item {
+  margin-right: 10px;
+}
+.pagination-item a {
+  background-color: #ffffff;
+  border: 1px solid #e5e5e5;
+  padding-top: 13px;
+  padding-bottom: 15px;
+  padding-left: 16px;
+  padding-right: 15px;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #000000;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+.pagination-item .active-results-page {
+  background-color: #ee3643;
+  border: 0;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.about-goods {
+  background-color: #f2f6f8;
+  padding-top: 68px;
+  padding-bottom: 66px;
+}
+.about-goods-title {
+  margin: 0;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #000000;
+  text-transform: uppercase;
+}
+.about-goods-description {
+  margin: 0;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #000000;
+}
 /*main-catalog*/
 /*footer-catalog*/
 
