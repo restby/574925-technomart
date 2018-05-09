@@ -100,8 +100,8 @@
 			<section class="catalog-wrapper">
         <h2>Перфораторы</h2>
 				<div class="wrapper-left-col">
-          <span>Фильтр:</span>
           <form class="form-filter-goods" action="https://echo.htmlacademy.ru" method="GET" aria-label="форма фильтра товаров по параметрам">
+            <span class="form-filter-text">Фильтр:</span>
             <fieldset class="first-filter-type">
               <legend>Цена:</legend>
               <div class="range-filter">
@@ -113,8 +113,8 @@
                   <div class="toggle toggle-max"></div>
                 </div>
                 <div class="price-controls">
-                  <label class="min-price">от <input name="min-price" type="text" placeholder="0"></label>
-                  <label class="max-price">до <input name="max-price" type="text" placeholder="15000"></label>
+                  <input name="min-price" type="text" placeholder="0">
+                  <input name="max-price" type="text" placeholder="30000">
                 </div>
               </div>
             </fieldset>
@@ -161,8 +161,8 @@
 				</div>
 				<div class="wrapper-right-col">
           <div class="sort-wrapper">
-            <span class="form-sort-text">Сортировать:</span>
-            <form class="sort-result" action="https://echo.htmlacademy.ru" method="GET" aria-label="форма сортировки товаров по параметрам">
+            <form class="form-sort-result" action="https://echo.htmlacademy.ru" method="GET" aria-label="форма сортировки товаров по параметрам">
+              <span class="form-sort-text">Сортировать:</span>
               <ul class="sort-list">
                 <li class="sort-item">
                   <a href="#">По цене</a></li>
