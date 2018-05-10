@@ -38,7 +38,7 @@ input[type="radio"].visually-hidden {
   font-weight: 400;
   line-height: 18px;
   display: block;
-  padding-top: 10px;
+  padding-top: 11px;
   padding-bottom: 10px;
   text-align: center;
   vertical-align: middle;
@@ -585,25 +585,25 @@ input[type="radio"].visually-hidden {
 .promo-item:nth-child(1) {
   position: relative;
   margin-bottom: 20px;
-  padding-top: 20px;
+  padding-top: 21px;
   padding-right: 43px;
-  padding-left: 23px;
+  padding-left: 22px;
   background-color: #ffbf47;
 }
 .promo-item:nth-child(2) {
   position: relative;
   margin-bottom: 20px;
-  padding-top: 20px;
+  padding-top: 21px;
   padding-right: 28px;
-  padding-left: 23px;
+  padding-left: 22px;
   background-color: #3bbce3;
 }
 .promo-item:nth-child(3) {
   position: relative;
   margin-bottom: 20px;
-  padding-top: 20px;
+  padding-top: 21px;
   padding-right: 31px;
-  padding-left: 25px;
+  padding-left: 22px;
   background-color: #dc91d8;
 }
 .promo-item:nth-child(3),
@@ -622,33 +622,37 @@ input[type="radio"].visually-hidden {
   font-weight: 700;
   line-height: 30px;
   margin: 0;
-  margin-bottom: 13px;
+  margin-bottom: 12px;
   color: #ffffff;
 }
 .promo-left-col a,
 .promo-services-left-col a {
   display: block;
-  margin-bottom: 22px;
+  margin-bottom: 21px;
 }
 .promo-right-col,
 .promo-services-right-col {
-  padding-top: 8px;
+  padding-top: 10px;
+}
+.promo-item:nth-child(2) .promo-right-col {
+  padding-top: 12px;
 }
 .btn-promo,
 .btn-promo-services {
   background-color: rgba(0, 0, 0, 0.1);
+  margin-left: 3px;
 }
 .promo-item:nth-child(1) .promo-item-title + .btn-promo {
   padding-right: 24px;
-  padding-left: 25px;
+  padding-left: 24px;
 }
 .promo-item:nth-child(2) .promo-item-title + .btn-promo {
-  padding-right: 27px;
+  padding-right: 25px;
   padding-left: 27px;
 }
 .promo-item:nth-child(3) .promo-item-title + .btn-promo {
   padding-right: 32px;
-  padding-left: 31px;
+  padding-left: 28px;
 }
 .promo-services-list {
   margin: 0;
@@ -660,10 +664,14 @@ input[type="radio"].visually-hidden {
   display: flex;
   box-sizing: border-box;
   width: 300px;
-  padding-top: 23px;
-  padding-left: 25px;
+  padding-top: 21px;
+  padding-left: 22px;
 
   justify-content: space-between;
+}
+.promo-services-item:nth-child(1)
+.promo-services-right-col {
+  padding-top: 5px;
 }
 .promo-services-item:nth-child(1) {
   margin-bottom: 20px;
@@ -680,11 +688,11 @@ input[type="radio"].visually-hidden {
 }
 .promo-services-item:nth-child(1) .promo-item-title + .btn-promo-services {
   padding-right: 23px;
-  padding-left: 24px;
+  padding-left: 20px;
 }
 .promo-services-item:nth-child(2) .promo-item-title + .btn-promo-services {
   padding-right: 38px;
-  padding-left: 38px;
+  padding-left: 34px;
 }
 .btn-promo:hover,
 .btn-promo-services:hover,
@@ -756,7 +764,7 @@ input[type="radio"].visually-hidden {
 .promo-slide1 {
   box-sizing: border-box;
   width: 620px;
-  padding-top: 26px;
+  padding-top: 23px;
   padding-bottom: 22px;
   padding-left: 24px;
   background-image: url("../img/slider-slide1.jpg");
@@ -765,9 +773,9 @@ input[type="radio"].visually-hidden {
 .promo-slide2 {
   box-sizing: border-box;
   width: 620px;
-  padding-top: 26px;
+  padding-top: 23px;
   padding-bottom: 22px;
-  padding-left: 24px;
+  padding-left: 25px;
   background-image: url("../img/slider-slide2.jpg");
   background-repeat: no-repeat;
 }
@@ -777,7 +785,7 @@ input[type="radio"].visually-hidden {
   font-weight: 700;
   line-height: 36px;
   margin: 0;
-  margin-bottom: 12px;
+  margin-bottom: 1px;
   text-transform: uppercase;
   color: #ffffff;
 }
@@ -788,11 +796,15 @@ input[type="radio"].visually-hidden {
   font-weight: 400;
   line-height: 24px;
   margin: 0;
-  margin-bottom: 125px;
+  margin-bottom: 122px;
   color: #ffffff;
 }
 .btn-promo-slider {
   width: 195px;
+}
+.promo-slide1 .btn-promo-slider {
+  width: 195px;
+  padding-left: 2px;
 }
 .popular-goods {
   margin-bottom: 21px;
@@ -800,7 +812,7 @@ input[type="radio"].visually-hidden {
 .popular-wrapper {
   display: flex;
   margin-bottom: 20px;
-  padding-top: 25px;
+  padding-top: 24px;
   padding-right: 24px;
   padding-bottom: 26px;
   padding-left: 28px;
@@ -814,8 +826,7 @@ input[type="radio"].visually-hidden {
   font-weight: 400;
   line-height: 30px;
   margin: 0;
-  padding-top: 8px;
-  padding-bottom: 9px;
+  padding-top: 5px;
   text-transform: uppercase;
   color: #32425c;
 }
