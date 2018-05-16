@@ -1,0 +1,90 @@
+<li class="popular-goods-item">
+  <!-- <div class="flag flag-new">Новинка</div> -->
+  <div class="actions">
+    <a href="#" class="btn-buy" aria-label="кнопка добавить в корзину">Купить</a>
+    <a href="#" class="btn-mark" aria-label="кнопка добавить в закладки">В закладки</a>
+  </div>
+  <div class="popular-img-wrapper">
+    <img class="popular-goods-photo" width="184" height="164" src="img/main-good-bfg9000.png" alt="фото перфоратора Bosch BFG 9000">
+  </div>
+  <b class="goods-title">Перфоратор BOSCH BFG 9000</b>
+  <s class="goods-discount">32500 Р.</s>
+  <b class="goods-price">25500 Р.</b>
+</li>
+.popular-goods-item {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  width: 218px;
+  border: 1px solid #eaeaea;
+  background-color: #ffffff;
+  margin-right: 20px;
+  line-height:20px;
+  font-weight:bold;
+  text-align:center;
+}
+.popular-goods-item .flag {
+  position: absolute;
+  content: "";
+  top: -1px;
+  right: -1px;
+  width: 60px;
+  height: 60px;
+  text-indent: -1000px;
+  overflow: hidden;
+  z-index: 20;
+}
+.popular-goods-item .flag-new{
+    background: url("../img/main-flag-new.png") no-repeat 0 0;
+}
+
+
+
+.promo-item {
+  position: relative;
+}
+.promo-item .flag {
+  position: absolute;
+  content: "";
+  top: -1px;
+  right: -1px;
+  width: 60px;
+  height: 60px;
+  text-indent: -1000px;
+  overflow: hidden;
+  z-index: 20;
+}
+.promo-item .flag-new{
+    background: url("../img/main-flag-new.png") no-repeat 0 0;
+}
+
+
+
+
+.result-item {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  width: 218px;
+  border: 1px solid #eaeaea;
+  background-color: #ffffff;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  line-height:20px;
+  font-weight:bold;
+  text-align:center;
+}
+.result-item .flag {
+  position: absolute;
+  content: "";
+  top: -1px;
+  right: -1px;
+  width: 60px;
+  height: 60px;
+  text-indent: -1000px;
+  overflow: hidden;
+  z-index: 20;
+}
+.result-item .flag-new{
+    background: url("../img/main-flag-new.png") no-repeat 0 0;
+}

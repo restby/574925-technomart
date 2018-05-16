@@ -16,24 +16,20 @@
       <div class="container">
         <a class="header-logo">Техномарт</a>
         <form class="form-title-search" action="https://echo.htmlacademy.ru" method="GET" aria-label="форма поиска по названию">
-          <input class="area-search" type="search" name="search" placeholder="Поиск:">
+          <input class="area-search" type="search" name="search" placeholder="Поиск:" aria-label="поле для ввода названия товара">
           <svg class="form-icon-search" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17">
             <path d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z"/>
           </svg>
         </form>
-        <!-- <form class="header-search-form" action="https://echo.htmlacademy.ru" method="GET">
-          <input class="search-form" type="search" name="search" placeholder="Поиск:">
-          <svg class="icon-search" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17"><path d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z"/></svg>
-        </form> -->
         <ul class="cart-list">
           <li class="cart-item">
-            <a href="#">Закладки:<span class="bookmark-count"> 0</span></a>
+            <a href="#" aria-label="ссылка на страницу закладок">Закладки:<span class="bookmark-count"> 0</span></a>
           </li>
           <li class="cart-item">
-            <a href="#">Корзина:<span class="cart-count"> 0</span></a>
+            <a href="#" aria-label="ссылка на страницу корзины">Корзина:<span class="cart-count"> 0</span></a>
           </li>
           <li class="cart-item">
-            <a class="btn-cart" href="#">Оформить заказ</a>
+            <a class="btn-cart" href="#" aria-label="ссылка на страницу оформления заказа">Оформить заказ</a>
           </li>
         </ul>
       </div>
@@ -55,20 +51,38 @@
         </div>
         <div class="header-contacts-columns">
           <ul class="contacts-user-list">
-            <li class="user-item"><a class="btn-login" href="#">Войти</a></li>
-            <li class="user-item"><a class="btn-registration" href="#">Регистрация</a></li>
+            <li class="user-item">
+              <a class="btn-login" href="#" aria-label="ссылка на страницу входа в ваш профиль">Войти</a>
+            </li>
+            <li class="user-item">
+              <a class="btn-registration" href="#" aria-label="ссылка на страницу регистрации">Регистрация</a>
+            </li>
           </ul>
         </div>
       </section>
       <nav class="main-header-navigation">
         <ul class="navigation-list">
-          <li class="navigation-item"><a href="#">Главная</a></li>
-          <li class="navigation-item"><a href="#">Компания</a></li>
-          <li class="navigation-item"><a href="catalog.html">Каталог</a></li>
-          <li class="navigation-item"><a href="#">Новости</a></li>
-          <li class="navigation-item"><a href="#">Спецпредложения</a></li>
-          <li class="navigation-item"><a href="#">Доставка</a></li>
-          <li class="navigation-item"><a href="#">Контакты</a></li>
+          <li class="navigation-item">
+            <a href="#" aria-label="ссылка на страницу с информацией о нашей компании">Компания</a>
+          </li>
+          <li class="navigation-item">
+            <a href="#" aria-label="ссылка на главную страницу">Главная</a>
+          </li>
+          <li class="navigation-item">
+            <a href="catalog.html" aria-label="ссылка на страницу с каталогом">Каталог</a>
+          </li>
+          <li class="navigation-item">
+            <a href="#" aria-label="ссылка на страницу с нашими новостями">Новости</a>
+          </li>
+          <li class="navigation-item">
+            <a href="#" aria-label="ссылка на страницу с информацией о наших спецпредложениях">Спецпредложения</a>
+          </li>
+          <li class="navigation-item">
+            <a href="#" aria-label="ссылка на страницу с информацией о доставке">Доставка</a>
+          </li>
+          <li class="navigation-item">
+            <a href="#" aria-label="ссылка на страницу с нашими контактами">Контакты</a>
+          </li>
         </ul>
       </nav>
     </div>
@@ -81,7 +95,7 @@
           <li class="promo-item">
             <div class="promo-left-col">
               <h3 class="promo-item-title">Материалы</h3>
-              <a href="#" class="btn btn-promo">На любой вкус</a>
+              <a href="#" class="btn btn-promo" aria-label="ссылка на страницу с нашим каталогом материаллов">На любой вкус</a>
             </div>
             <div class="promo-right-col">
               <svg xmlns="http://www.w3.org/2000/svg" width="44" height="65">
@@ -96,7 +110,7 @@
           <li class="promo-item">
             <div class="promo-left-col">
               <h3 class="promo-item-title">Инструмент</h3>
-              <a href="#" class="btn btn-promo">На все случаи</a>
+              <a href="#" class="btn btn-promo" aria-label="ссылка на страницу с нашим каталогом инструментов">На все случаи</a>
             </div>
             <div class="promo-right-col">
               <svg xmlns="http://www.w3.org/2000/svg" width="75" height="61">
@@ -110,7 +124,7 @@
           <li class="promo-item">
             <div class="promo-left-col">
               <h3 class="promo-item-title">Техника</h3>
-              <a href="#" class="btn btn-promo">Для стройки</a>
+              <a href="#" class="btn btn-promo" aria-label="ссылка на страницу с нашим каталогом техники">Для стройки</a>
             </div>
             <div class="promo-right-col">
               <svg xmlns="http://www.w3.org/2000/svg" width="78" height="62">
@@ -124,19 +138,19 @@
           </li>
           <li class="promo-item">
             <div class="promo-slider">
-            	<button class="btn-slider-prev"></button>
-          		<button class="btn-slider-next"></button>
-          		<button class="btn-slider-indicator"></button>
-          		<button class="btn-slider-indicator indicator-active"></button>
+            	<button class="btn-slider-prev" aria-label="кнопка переключения на следующий слайд"></button>
+          		<button class="btn-slider-next" aria-label="кнопка переключения на предыдущий слайд"></button>
+          		<button class="btn-slider-indicator" aria-label="индикатор кнопка переключения на следующий слайд"></button>
+          		<button class="btn-slider-indicator indicator-active" aria-label="индикатор кнопка переключения на предыдущий слайд"></button>
               <!-- <div class="promo-slide1">
                 <h3>Перфораторы</h3>
                 <p>Настоящие мужские игрушки</p>
-                <a href="catalog.html" class="btn btn-promo-slider">Открыть каталог</a>
+                <a href="catalog.html" class="btn btn-promo-slider" aria-label="ссылка на страницу с каталогом перфораторов">Открыть каталог</a>
               </div> -->
               <div class="promo-slide2">
                 <h3>Дрели</h3>
                 <p>Соседям на радость</p>
-                <a href="catalog.html" class="btn btn-promo-slider">Открыть каталог</a>
+                <a href="catalog.html" class="btn btn-promo-slider" aria-label="ссылка на страницу с каталогом дрелей">Открыть каталог</a>
               </div>
             </div>
           </li>
@@ -145,7 +159,7 @@
               <li class="promo-services-item">
                 <div class="promo-services-left-col">
                   <h3 class="promo-item-title">Скидка 50%</h3>
-                  <a href="#" class="btn btn-promo-services">На 350 товаров</a>
+                  <a href="#" class="btn btn-promo-services" aria-label="ссылка на страницу с информацией о наших спецпредложениях">На 350 товаров</a>
                 </div>
                 <div class="promo-services-right-col">
                   <svg xmlns="http://www.w3.org/2000/svg" width="59" height="72">
@@ -162,7 +176,7 @@
               <li class="promo-services-item">
                 <div class="promo-services-left-col">
                   <h3 class="promo-item-title">Доставка</h3>
-                  <a href="#" class="btn btn-promo-services">Бесплатно</a>
+                  <a href="#" class="btn btn-promo-services" aria-label="ссылка на страницу с информацией о доставке">Бесплатно</a>
                 </div>
                 <div class="promo-services-right-col">
                   <svg xmlns="http://www.w3.org/2000/svg" width="78" height="63">
@@ -182,17 +196,17 @@
       <section class="popular-goods">
         <div class="popular-wrapper">
           <h2>Популярные товары:</h2>
-          <a href="#" class="btn btn-popular-goods">Все популярные товары</a>
+          <a href="#" class="btn btn-popular-goods" aria-label="ссылка на кататлог популярных товаров">Все популярные товары</a>
         </div>
         <ul class="popular-goods-list">
           <li class="popular-goods-item">
             <!-- <div class="flag flag-new">Новинка</div> -->
             <div class="actions">
-              <a href="#" class="btn-buy">Купить</a>
-              <a href="#" class="btn-mark">В закладки</a>
+              <a href="#" class="btn-buy" aria-label="кнопка добавить в корзину">Купить</a>
+              <a href="#" class="btn-mark" aria-label="кнопка добавить в закладки">В закладки</a>
             </div>
             <div class="popular-img-wrapper">
-              <img class="popular-goods-photo" width="184" height="164" src="img/main-good-bfg9000.png" alt="">
+              <img class="popular-goods-photo" width="184" height="164" src="img/main-good-bfg9000.png" alt="фото перфоратора Bosch BFG 9000">
             </div>
             <b class="goods-title">Перфоратор BOSCH BFG 9000</b>
             <s class="goods-discount">32500 Р.</s>
@@ -201,11 +215,11 @@
           <li class="popular-goods-item">
             <!-- <div class="flag flag-new">Новинка</div> -->
             <div class="actions">
-              <a href="#" class="btn-buy">Купить</a>
-              <a href="#" class="btn-mark">В закладки</a>
+              <a href="#" class="btn-buy" aria-label="кнопка добавить в корзину">Купить</a>
+              <a href="#" class="btn-mark" aria-label="кнопка добавить в закладки">В закладки</a>
             </div>
             <div class="popular-img-wrapper">
-              <img class="popular-goods-photo" width="127" height="112" src="img/main-good-bfg3000.png" alt="">
+              <img class="popular-goods-photo" width="127" height="112" src="img/main-good-bfg3000.png" alt="фото перфоратора Bosch BFG 3000">
             </div>
             <b class="goods-title">Перфоратор BOSCH BFG 3000</b>
             <s class="goods-discount">22500 Р.</s>
@@ -214,11 +228,11 @@
           <li class="popular-goods-item">
             <!-- <div class="flag flag-new">Новинка</div> -->
             <div class="actions">
-              <a href="#" class="btn-buy">Купить</a>
-              <a href="#" class="btn-mark">В закладки</a>
+              <a href="#" class="btn-buy" aria-label="кнопка добавить в корзину">Купить</a>
+              <a href="#" class="btn-mark" aria-label="кнопка добавить в закладки">В закладки</a>
             </div>
             <div class="popular-img-wrapper">
-              <img class="popular-goods-photo" width="144" height="128" src="img/main-good-bfg6000.png" alt="">
+              <img class="popular-goods-photo" width="144" height="128" src="img/main-good-bfg6000.png" alt="фото перфоратора Bosch BFG 6000">
             </div>
             <b class="goods-title">Перфоратор BOSCH BFG 6000</b>
             <s class="goods-discount">30500 Р.</s>
@@ -227,11 +241,11 @@
           <li class="popular-goods-item">
             <div class="flag flag-new">Новинка</div>
             <div class="actions">
-              <a href="#" class="btn-buy">Купить</a>
-              <a href="#" class="btn-mark">В закладки</a>
+              <a href="#" class="btn-buy" aria-label="кнопка добавить в корзину">Купить</a>
+              <a href="#" class="btn-mark" aria-label="кнопка добавить в закладки">В закладки</a>
             </div>
             <div class="popular-img-wrapper">
-              <img class="popular-goods-photo" width="127" height="112" src="img/main-good-bfg2000.png" alt="">
+              <img class="popular-goods-photo" width="127" height="112" src="img/main-good-bfg2000.png" alt="фото перфоратора Bosch BFG 2000">
             </div>
             <b class="goods-title">Перфоратор BOSCH BFG 2000</b>
             <b class="goods-price">12500 Р.</b>
@@ -241,47 +255,47 @@
       <section class="popular-manufactors">
         <div class="popular-manufactors-wrapper">
           <h2>Популярные производители:</h2>
-          <a href="#" class="btn btn-popular-manufactors">Все производители</a>
+          <a href="#" class="btn btn-popular-manufactors"  aria-label="ссылка на каталог популярных производителей">Все производители</a>
         </div>
         <ul class="popular-manufactors-list">
           <li class="popular-manufactors-item">
-            <a href="#" class="manufactor-link">
-              <img class="manufactor-photo" src="img/manufactor-icon-bosch.png" alt="ссылка на товары производителя: bosch">
+            <a href="#" class="manufactor-link" aria-label="ссылка на товары производителя: bosch">
+              <img class="manufactor-photo" width="" height="" src="img/manufactor-icon-bosch.png" alt="логотип производителя: bosch">
             </a>
           </li>
           <li class="popular-manufactors-item">
-            <a href="#" class="manufactor-link">
-              <img class="manufactor-photo" src="img/manufactor-icon-makita.png" alt="ссылка на товары производителя: makita">
+            <a href="#" class="manufactor-link" aria-label="ссылка на товары производителя: makita">
+              <img class="manufactor-photo" width="" height="" src="img/manufactor-icon-makita.png" alt="логотип производителя: makita">
             </a>
           </li>
           <li class="popular-manufactors-item">
-            <a href="#" class="manufactor-link">
-              <img class="manufactor-photo" src="img/manufactor-icon-dewalt.png" alt="ссылка на товары производителя: dewalt">
+            <a href="#" class="manufactor-link" aria-label="ссылка на товары производителя: dewalt">
+              <img class="manufactor-photo" width="" height="" src="img/manufactor-icon-dewalt.png" alt="логотип производителя: dewalt">
             </a>
           </li>
           <li class="popular-manufactors-item">
-            <a href="#" class="manufactor-link">
-              <img class="manufactor-photo" src="img/manufactor-icon-interscol.png" alt="ссылка на товары производителя: interscol">
+            <a href="#" class="manufactor-link" aria-label="ссылка на товары производителя: interscol">
+              <img class="manufactor-photo" width="" height="" src="img/manufactor-icon-interscol.png" alt="логотип производителя: interscol">
             </a>
           </li>
           <li class="popular-manufactors-item">
-            <a href="#" class="manufactor-link">
-              <img class="manufactor-photo" src="img/manufactor-icon-hitachi.png" alt="ссылка на товары производителя: hitachi">
+            <a href="#" class="manufactor-link" aria-label="ссылка на товары производителя: hitachi">
+              <img class="manufactor-photo" width="" height="" src="img/manufactor-icon-hitachi.png" alt="логотип производителя: hitachi">
             </a>
           </li>
           <li class="popular-manufactors-item">
-            <a href="#" class="manufactor-link">
-              <img class="manufactor-photo" src="img/manufactor-icon-lg.png" alt="ссылка на товары производителя: lg">
+            <a href="#" class="manufactor-link" aria-label="ссылка на товары производителя: lg">
+              <img class="manufactor-photo" width="" height="" src="img/manufactor-icon-lg.png" alt="логотип производителя: lg">
             </a>
           </li>
           <li class="popular-manufactors-item">
-            <a href="#" class="manufactor-link">
-              <img class="manufactor-photo" src="img/manufactor-icon-aeg.png" alt="ссылка на товары производителя: aeg">
+            <a href="#" class="manufactor-link" aria-label="ссылка на товары производителя: aeg">
+              <img class="manufactor-photo" width="" height="" src="img/manufactor-icon-aeg.png" alt="логотип производителя: aeg">
             </a>
           </li>
           <li class="popular-manufactors-item">
-            <a href="#" class="manufactor-link">
-              <img class="manufactor-photo" src="img/manufactor-icon-metabo.png" alt="ссылка на товары производителя: metabo">
+            <a href="#" class="manufactor-link" aria-label="ссылка на товары производителя: metabo">
+              <img class="manufactor-photo" width="" height="" src="img/manufactor-icon-metabo.png" alt="логотип производителя: metabo">
             </a>
           </li>
         </ul>
@@ -296,13 +310,13 @@
           <div class="services-left-col">
             <ul class="services-list">
               <li class="services-item">
-                <a class="btn-services-item active-item" href="#">Доставка</a>
+                <a class="btn-services-item active-item" href="#" aria-label="ссылка на страницу с информацией о доставке">Доставка</a>
               </li>
               <li class="services-item">
-                <a class="btn-services-item" href="#">Гарантия</a>
+                <a class="btn-services-item" href="#" aria-label="ссылка на страницу с информацией о нашей гарантии">Гарантия</a>
               </li>
               <li class="services-item">
-                <a class="btn-services-item" href="#">Кредит</a>
+                <a class="btn-services-item" href="#" aria-label="ссылка на страницу с информацией о кредитовании">Кредит</a>
               </li>
             </ul>
           </div>
@@ -346,16 +360,16 @@
             <li class="company-item">Автотрейдинг</li>
             <li class="company-item">ЖелДорЭкспедиция</li>
           </ul>
-          <a href="#" class="btn btn-about">Подробнее о компании</a>
+          <a href="#" class="btn btn-about" aria-label="ссылка на страницу с подробной информацией о нашей компании">Подробнее о компании</a>
         </div>
         <div class="about-right-col">
           <h3>Контакты</h3>
           <p>Вы можете забрать товар сами,<br>
           заехав в наш офис:</p>
           <div class="min-map">
-            <img class="static-map" src="img/main-min-map.jpg" alt="">
+            <img class="static-map" width="300" height="158" src="img/main-min-map.jpg" alt="наш адрес: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
           </div>
-          <a href="#" class="btn btn-write-us">Заблудились? Напишите нам!</a>
+          <a href="#" class="btn btn-write-us" aria-label="кнопка открыть форму отправки письма">Заблудились? Напишите нам!</a>
         </div>
       </div>
     </section>
@@ -372,33 +386,33 @@
         <div class="footer-right-col">
           <ul class="footer-navigation-list">
             <li class="footer-navigation-item">
-              <a href="#">Компания</a>
+              <a href="#" aria-label="ссылка на страницу с информацией о нашей компании">Компания</a>
             </li>
             <li class="footer-navigation-item">
-              <a href="#">Новости</a>
+              <a href="#" aria-label="ссылка на страницу с нашими новостями">Новости</a>
             </li>
             <li class="footer-navigation-item">
-              <a href="catalog.html">Каталог</a>
+              <a href="catalog.html" aria-label="ссылка на страницу с каталогом">Каталог</a>
             </li>
             <li class="footer-navigation-item">
-              <a href="#">Доставка</a>
+              <a href="#" aria-label="ссылка на страницу с информацией о доставке">Доставка</a>
             </li>
             <li class="footer-navigation-item">
-              <a href="#">Контакты</a>
+              <a href="#" aria-label="ссылка на страницу с нашими контактами">Контакты</a>
             </li>
           </ul>
           <ul class="footer-promo-list">
             <li class="footer-promo-item">
-              <a href="#">Материалы</a>
+              <a href="#" aria-label="ссылка на страницу с нашим каталогом материаллов">Материалы</a>
             </li>
             <li class="footer-promo-item">
-              <a href="#">Техника</a>
+              <a href="#" aria-label="ссылка на страницу с нашим каталогом техники">Техника</a>
             </li>
             <li class="footer-promo-item">
-              <a href="#">Инструмент</a>
+              <a href="#" aria-label="ссылка на страницу с нашим каталогом инструментов">Инструмент</a>
             </li>
             <li class="footer-promo-item">
-              <a href="#">Спецпредложения</a>
+              <a href="#" aria-label="ссылка на страницу с информацией о наших спецпредложениях">Спецпредложения</a>
             </li>
           </ul>
         </div>
@@ -415,19 +429,19 @@
           <h2 class="visually-hidden">Социальные сети</h2>
           <ul class="social-list">
             <li class="social-item">
-              <a class="btn-social" href="#" aria-label="ссылка на страницу в социальной сети &quot;вконтакте&quot;">
+              <a class="btn-social" href="#" aria-label="ссылка на нашу страницу в социальной сети вконтакте">
                 <span class="visually-hidden">вконтакте</span>
                 <svg class="icon-vk" xmlns="http://www.w3.org/2000/svg" width="26" height="15" viewBox="0 0 26 15"><path fill="#FFF" d="M16.138 11.51c.956-.31 2.18 2.04 3.483 2.94.98.68 1.728.533 1.728.533l3.473-.05s1.816-.112.958-1.554c-.07-.12-.503-1.07-2.585-3.023-2.177-2.043-1.882-1.712.74-5.244 1.596-2.153 2.235-3.468 2.035-4.028-.192-.54-1.365-.4-1.365-.4L20.69.714c-.38 0-.704.12-.85.515-.004.004-.622 1.666-1.446 3.08-1.74 2.988-2.436 3.147-2.724 2.96-.66-.433-.494-1.737-.494-2.664 0-2.897.432-4.105-.846-4.417-.427-.104-.74-.172-1.828-.182-1.392-.02-2.574 0-3.244.33-.445.222-.786.71-.58.74.26.034.844.16 1.156.585.4.552.39 1.79.39 1.79s.228 3.41-.54 3.833c-.53.29-1.25-.302-2.804-3.016-.793-1.388-1.392-2.922-1.392-2.922s-.116-.285-.326-.44c-.25-.186-.6-.245-.6-.245L.848.684S.29.7.085.946c-.182.218-.015.668-.015.668s2.91 6.88 6.203 10.347c3.02 3.183 6.452 2.972 6.452 2.972h1.555s.47-.054.71-.312c.223-.24.213-.69.213-.69s-.03-2.11.935-2.42z"/></svg>
               </a>
             </li>
             <li class="social-item">
-              <a class="btn-social" href="#" aria-label="ссылка на страницу в социальной сети &quot;facebook&quot;">
+              <a class="btn-social" href="#" aria-label="ссылка на нашу страницу в социальной сети facebook">
                 <span class="visually-hidden">facebook</span>
                 <svg class="icon-facebook" xmlns="http://www.w3.org/2000/svg" width="12" height="22" viewBox="0 0 12 22"><path fill="#FFF" d="M12 4V0H8a4 4 0 0 0-4 4v4H0v4h4v10h4V12h4V8H8V4h4z"/></svg>
               </a>
             </li>
             <li class="social-item">
-              <a class="btn-social" href="#" aria-label="ссылка на страницу в социальной сети &quot;instagram&quot;">
+              <a class="btn-social" href="#" aria-label="ссылка на нашу страницу в социальной сети instagram">
                 <span class="visually-hidden">instagram</span>
                 <svg class="icon-instagram" xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"><path fill="#FFF" d="M18 0H3C1.35 0 0 1.35 0 3v15c0 1.65 1.35 3 3 3h15c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3zm-7.5 7c1.93 0 3.5 1.57 3.5 3.5S12.43 14 10.5 14 7 12.43 7 10.5 8.57 7 10.5 7zM18 18H3V9h1.18c-.113.482-.18.983-.18 1.5a6.5 6.5 0 0 0 13 0 6.45 6.45 0 0 0-.18-1.5H18v9zm0-11h-4V3h4v4z"/></svg>
               </a>
@@ -436,36 +450,36 @@
         </section>
         <section class="callback">
           <h2>Обратная связь:</h2>
-          <p>mail@htmlacademy.ru</p>
+          <a href="#" aria-label="наш электронный ящик">mail@htmlacademy.ru</a>
         </section>
         <section class="copyright">
           <h2>Разработано — </h2>
-          <p>htmlacademy.ru</p>
+          <a href="https://htmlacademy.ru/intensive/htmlcss" aria-label="ссылка на страницу Интенсивный онлайн‑курс Профессиональный HTML и CSS, уровень 1 от htmlacademy">htmlacademy.ru</a>
         </section>
       </div>
     </section>
   </footer>
   <div class="modal-write">
       <h2 class="visually-hidden">Форма отправки письма</h2>
-      <button class="modal-close" type="button" aria-label="кнопка закрыть">Закрыть</button>
-      <form class="form-write-us" action="https://echo.htmlacademy.ru" method="POST">
+      <button class="modal-close" type="button" aria-label="кнопка закрыть форму отправки письма">Закрыть</button>
+      <form class="form-write-us" action="https://echo.htmlacademy.ru" method="POST" aria-label="форма отправки письма">
         <p class="appointment-item">
           <label for="name">Ваше имя:</label>
-          <input type="text" id="name" name="name" placeholder="Представьтесь, пожалуйста" aria-label="поле ввода имени">
+          <input type="text" id="name" name="name" placeholder="Представьтесь, пожалуйста" aria-label="поле для ввода вашего имени">
         </p>
         <p class="appointment-item">
           <label for="email">Ваш e-mail:</label>
-          <input type="text" id="email" name="email" placeholder="Для отправки ответа" aria-label="поле ввода электронного ящика">
+          <input type="text" id="email" name="email" placeholder="Для отправки ответа" aria-label="поле для ввода вашего электронного ящика">
         </p>
         <p class="appointment-item">
           <label for="mail-text">Текст письма:</label>
-          <textarea name="mail-text" id="mail-text" cols="50" rows="5" placeholder="В свободной форме" aria-label="поле ввода текста"></textarea>
+          <textarea name="mail-text" id="mail-text" cols="50" rows="5" placeholder="В свободной форме" aria-label="поле для ввода текста вашего письма"></textarea>
         </p>
-        <button class="btn btn-form-letter" type="submit" aria-label="кнопка отправить">Отправить</button>
+        <button class="btn btn-form-letter" type="submit" aria-label="кнопка отправить ваше письмо">Отправить</button>
       </form>
   </div>
   <div class="modal-map">
-    <button class="modal-map-close" type="button" aria-label="кнопка закрыть">Закрыть</button>
+    <button class="modal-map-close" type="button" aria-label="кнопка закрыть карту">Закрыть</button>
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651595!2d30.320894616394252!3d59.93879418187624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExODY!5e0!3m2!1sru!2sby!4v1526294155331" width="940" height="446" allowfullscreen></iframe>
     <!-- frameborder="0" style="border:0"  -->
   </div>
