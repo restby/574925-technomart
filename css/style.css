@@ -770,39 +770,36 @@ input[type="radio"].visually-hidden {
   background-color: transparent;
   background-image: url("../img/slider-icon-right.min.svg");
 }
-.btn-slider-indicator {
-  background-color: #ffffff;
-}
-.btn-slider-indicator:nth-child(3) {
+.btn-slider-indicator-1 {
   position: absolute;
   top: 220px;
   left: 295px;
   display: block;
-  width: 10px;
-  height: 10px;
+  width: 6px;
+  height: 6px;
   margin-right: 10px;
   padding: 0;
-  cursor: pointer;
   border: 2px solid #ffffff;
+  background-color: #ffffff;
   border-radius: 50%;
 }
-.btn-slider-indicator:nth-child(4) {
+.btn-slider-indicator-2 {
   position: absolute;
   top: 220px;
   left: 315px;
   display: block;
-  width: 10px;
-  height: 10px;
+  width: 6px;
+  height: 6px;
   padding: 0;
-  cursor: pointer;
   border: 2px solid #ffffff;
+  background-color: #ffffff;
   border-radius: 50%;
 }
 .indicator-active {
   background-color: #ee3643;
 }
-
 .promo-slide1 {
+  display: none;
   box-sizing: border-box;
   width: 620px;
   padding-top: 23px;
@@ -812,6 +809,7 @@ input[type="radio"].visually-hidden {
   background-repeat: no-repeat;
 }
 .promo-slide2 {
+  display: none;
   box-sizing: border-box;
   width: 620px;
   padding-top: 23px;
@@ -846,6 +844,9 @@ input[type="radio"].visually-hidden {
 .promo-slide1 .btn-promo-slider {
   width: 195px;
   padding-left: 2px;
+}
+.show-promo-slide {
+  display: block;
 }
 .popular-goods {
   margin-bottom: 21px;
@@ -1170,7 +1171,7 @@ input[type="radio"].visually-hidden {
 }
 .services-right-col {
   width: 700px;
-  padding-left: 80px;
+  padding-left: 76px;
 }
 .services-list {
   position: relative;
@@ -1201,6 +1202,10 @@ input[type="radio"].visually-hidden {
   padding-bottom: 17px;
   padding-left: 22px;
   color: #ffffff;
+  border: 0;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
   background-color: #32425c;
   box-shadow: inset 0 1px rgba(64, 80, 105, 1),
   0 1px rgba(41, 52, 73, 1);
@@ -1227,22 +1232,28 @@ input[type="radio"].visually-hidden {
   box-shadow: inset 0 -1px rgba(255, 255, 255, 1);
 }
 .services-slide-1 {
+  display: none;
   height: 100%;
   background-image: url("../img/main-services-delivery.png");
   background-repeat: no-repeat;
   background-position: right bottom;
 }
 .services-slide-2 {
+  display: none;
   height: 100%;
   background-image: url("../img/main-services-guarantee.png");
   background-repeat: no-repeat;
   background-position: right bottom;
 }
 .services-slide-3 {
+  display: none;
   height: 100%;
   background-image: url("../img/main-services-credit.png");
   background-repeat: no-repeat;
   background-position: right bottom;
+}
+.services-slide-show {
+  display: block;
 }
 .services-title {
   font-size: 36px;
@@ -2086,6 +2097,10 @@ input[type="radio"].visually-hidden {
   border-radius: 3px 0 0 3px;
   background-color: #ee3643;
 }
+.popular-goods-item .goods-price:hover,
+.result-item .goods-price:hover {
+  cursor: pointer;
+}
 .result-item .goods-price::after {
   position: absolute;
   top: 0;
@@ -2275,7 +2290,10 @@ input[type="radio"].visually-hidden {
   box-shadow: 0 20px 40px 0 rgba(0, 0, 0, .75),
   inset 0 -112px 0 0 #f4f4f4;
 }
-.modal-close {
+.modal-write-show {
+  display: block;
+}
+.modal-write-close {
   font-size: 0;
   position: absolute;
   top: 16px;
@@ -2286,8 +2304,8 @@ input[type="radio"].visually-hidden {
   border: 0;
   background-color: transparent;
 }
-.modal-close::before,
-.modal-close::after {
+.modal-write-close::before,
+.modal-write-close::after {
   position: absolute;
   top: 10px;
   left: 2px;
@@ -2296,12 +2314,12 @@ input[type="radio"].visually-hidden {
   content: "";
   background-color: #ee3643;
 }
-.modal-close::before {
+.modal-write-close::before {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
 }
 
-.modal-close::after {
+.modal-write-close::after {
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
 }
@@ -2371,6 +2389,7 @@ input[type="radio"].visually-hidden {
 }
 .modal-map {
   position: fixed;
+  height: 446px;
   z-index: 11;
   top: 50%;
   left: 50%;
@@ -2409,6 +2428,12 @@ input[type="radio"].visually-hidden {
 .modal-map-close::after {
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
+}
+.hide-map {
+  display: none;
+}
+.modal-map-show {
+  display: block;
 }
 /*modal-index*/
 /*modal-catalog*/

@@ -92,9 +92,6 @@
       <section class="promo">
         <h2 class="visually-hidden">Товары</h2>
         <ul class="promo-list">
-
-
-
           <li class="promo-item">
             <div class="flag flag-new">Новинка</div>
             <div class="promo-left-col">
@@ -110,10 +107,6 @@
               </svg>
             </div>
           </li>
-
-
-
-
           <li class="promo-item">
             <!-- <div class="flag flag-new">Новинка</div> -->
             <div class="promo-left-col">
@@ -147,17 +140,17 @@
             <div class="promo-slider">
             	<button class="btn-slider-prev" aria-label="кнопка переключения на следующий слайд"></button>
           		<button class="btn-slider-next" aria-label="кнопка переключения на предыдущий слайд"></button>
-          		<button class="btn-slider-indicator" aria-label="индикатор кнопка переключения на следующий слайд"></button>
-          		<button class="btn-slider-indicator indicator-active" aria-label="индикатор кнопка переключения на предыдущий слайд"></button>
-              <!-- <div class="promo-slide1">
-                <h3>Перфораторы</h3>
-                <p>Настоящие мужские игрушки</p>
-                <a href="catalog.html" class="btn btn-promo-slider" aria-label="ссылка на страницу с каталогом перфораторов">Открыть каталог</a>
-              </div> -->
-              <div class="promo-slide2">
+          		<div class="btn-slider-indicator-1 indicator-active" aria-label="индикатор кнопка переключения на следующий слайд"></div>
+          		<div class="btn-slider-indicator-2" aria-label="индикатор кнопка переключения на предыдущий слайд"></div>
+              <div class="promo-slide1 show-promo-slide">
                 <h3>Дрели</h3>
                 <p>Соседям на радость</p>
                 <a href="catalog.html" class="btn btn-promo-slider" aria-label="ссылка на страницу с каталогом дрелей">Открыть каталог</a>
+              </div>
+              <div class="promo-slide2">
+                <h3>Перфораторы</h3>
+                <p>Настоящие мужские игрушки</p>
+                <a href="catalog.html" class="btn btn-promo-slider" aria-label="ссылка на страницу с каталогом перфораторов">Открыть каталог</a>
               </div>
             </div>
           </li>
@@ -317,38 +310,38 @@
           <div class="services-left-col">
             <ul class="services-list">
               <li class="services-item">
-                <a class="btn-services-item active-item" href="#" aria-label="ссылка на страницу с информацией о доставке">Доставка</a>
+                <button class="btn-services-item active-item" aria-label="информация о доставке">Доставка</button>
               </li>
               <li class="services-item">
-                <a class="btn-services-item" href="#" aria-label="ссылка на страницу с информацией о нашей гарантии">Гарантия</a>
+                <button class="btn-services-item" aria-label="информация о нашей гарантии">Гарантия</button>
               </li>
               <li class="services-item">
-                <a class="btn-services-item" href="#" aria-label="ссылка на страницу с информацией о кредитовании">Кредит</a>
+                <button class="btn-services-item" aria-label="информация о кредитовании">Кредит</button>
               </li>
             </ul>
           </div>
           <div class="services-right-col">
-            <div class="services-slide-1">
+            <div class="services-slide-1 services-slide-show">
               <h3 class="services-title">Доставка</h3>
               <p class="services-description">Мы с удовольствием доставим ваш товар прямо<br>
               к вашему подъезду совершенно бесплатно!<br>
               Ведь мы неплохо заработаем,<br>
               поднимая его на ваш этаж!</p>
             </div>
-            <!-- <div class="services-slide-2">
+            <div class="services-slide-2">
               <h3 class="services-title">Гарантия</h3>
               <p class="services-description">Если купленный у нас товар поломается или заискрит,<br>
               а также в случае пожара, спровоцированного его возгаранием,<br>
               вы всегда можете быть уверены в нашей гарантии. Мы обменяем<br>
               сгоревший товар на новый.<br>
               Дом уж восстановите как-нибудь сами.</p>
-            </div> -->
-            <!-- <div class="services-slide-3">
+            </div>
+            <div class="services-slide-3">
               <h3 class="services-title">Кредит</h3>
               <p class="services-description">Залезть в долговую яму стало проще!<br>
               Кредитные консультанты придут вам на помощь.</p>
               <a class="btn btn-services" href="#"> Отправить заявку</a>
-            </div> -->
+            </div>
           </div>
         </div>
       </div>
@@ -373,8 +366,8 @@
           <h3>Контакты</h3>
           <p>Вы можете забрать товар сами,<br>
           заехав в наш офис:</p>
-          <div class="min-map">
-            <img class="static-map" width="300" height="158" src="img/main-min-map.jpg" alt="наш адрес: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
+          <div class="wrapper-min-map">
+            <img class="min-static-map" width="300" height="158" src="img/main-min-map.jpg" alt="наш адрес: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
           </div>
           <a href="#" class="btn btn-write-us" aria-label="кнопка открыть форму отправки письма">Заблудились? Напишите нам!</a>
         </div>
@@ -468,7 +461,7 @@
   </footer>
   <div class="modal-write">
       <h2 class="visually-hidden">Форма отправки письма</h2>
-      <button class="modal-close" type="button" aria-label="кнопка закрыть форму отправки письма">Закрыть</button>
+      <button class="modal-write-close" type="button" aria-label="кнопка закрыть форму отправки письма">Закрыть</button>
       <form class="form-write-us" action="https://echo.htmlacademy.ru" method="POST" aria-label="форма отправки письма">
         <p class="appointment-item">
           <label for="name">Ваше имя:</label>
@@ -487,8 +480,7 @@
   </div>
   <div class="modal-map">
     <button class="modal-map-close" type="button" aria-label="кнопка закрыть карту">Закрыть</button>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651595!2d30.320894616394252!3d59.93879418187624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExODY!5e0!3m2!1sru!2sby!4v1526294155331" width="940" height="446" allowfullscreen></iframe>
-    <!-- frameborder="0" style="border:0"  -->
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651595!2d30.320894616394252!3d59.93879418187624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExODY!5e0!3m2!1sru!2sby!4v1526294155331" width="940" height="446" allowfullscreen frameborder="0" style="border:0"></iframe>
   </div>
   <script src="js/script.js"></script>
   <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
