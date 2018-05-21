@@ -1512,8 +1512,8 @@ input[type="radio"].visually-hidden {
 .transparent-btn {
   position: absolute;
   top: 0;
-  left: 0;
-  width: 300px;
+  left: 45px;
+  width: 255px;
   height: 158px;
   background-color: transparent;
 }
