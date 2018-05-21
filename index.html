@@ -260,42 +260,42 @@
         <ul class="popular-manufactors-list">
           <li class="popular-manufactors-item">
             <a href="#" class="manufactor-link" aria-label="ссылка на товары производителя: bosch">
-              <img class="manufactor-photo" width="" height="" src="img/manufactor-icon-bosch.png" alt="логотип производителя: bosch">
+              <img class="manufactor-photo" width="126" height="37" src="img/manufactor-icon-bosch.png" alt="логотип производителя: bosch">
             </a>
           </li>
           <li class="popular-manufactors-item">
             <a href="#" class="manufactor-link" aria-label="ссылка на товары производителя: makita">
-              <img class="manufactor-photo" width="" height="" src="img/manufactor-icon-makita.png" alt="логотип производителя: makita">
+              <img class="manufactor-photo" width="123" height="40" src="img/manufactor-icon-makita.png" alt="логотип производителя: makita">
             </a>
           </li>
           <li class="popular-manufactors-item">
             <a href="#" class="manufactor-link" aria-label="ссылка на товары производителя: dewalt">
-              <img class="manufactor-photo" width="" height="" src="img/manufactor-icon-dewalt.png" alt="логотип производителя: dewalt">
+              <img class="manufactor-photo" width="146" height="44" src="img/manufactor-icon-dewalt.png" alt="логотип производителя: dewalt">
             </a>
           </li>
           <li class="popular-manufactors-item">
             <a href="#" class="manufactor-link" aria-label="ссылка на товары производителя: interscol">
-              <img class="manufactor-photo" width="" height="" src="img/manufactor-icon-interscol.png" alt="логотип производителя: interscol">
+              <img class="manufactor-photo" width="184" height="32" src="img/manufactor-icon-interscol.png" alt="логотип производителя: interscol">
             </a>
           </li>
           <li class="popular-manufactors-item">
             <a href="#" class="manufactor-link" aria-label="ссылка на товары производителя: hitachi">
-              <img class="manufactor-photo" width="" height="" src="img/manufactor-icon-hitachi.png" alt="логотип производителя: hitachi">
+              <img class="manufactor-photo" width="169" height="31" src="img/manufactor-icon-hitachi.png" alt="логотип производителя: hitachi">
             </a>
           </li>
           <li class="popular-manufactors-item">
             <a href="#" class="manufactor-link" aria-label="ссылка на товары производителя: lg">
-              <img class="manufactor-photo" width="" height="" src="img/manufactor-icon-lg.png" alt="логотип производителя: lg">
+              <img class="manufactor-photo" width="121" height="73" src="img/manufactor-icon-lg.png" alt="логотип производителя: lg">
             </a>
           </li>
           <li class="popular-manufactors-item">
             <a href="#" class="manufactor-link" aria-label="ссылка на товары производителя: aeg">
-              <img class="manufactor-photo" width="" height="" src="img/manufactor-icon-aeg.png" alt="логотип производителя: aeg">
+              <img class="manufactor-photo" width="151" height="96" src="img/manufactor-icon-aeg.png" alt="логотип производителя: aeg">
             </a>
           </li>
           <li class="popular-manufactors-item">
             <a href="#" class="manufactor-link" aria-label="ссылка на товары производителя: metabo">
-              <img class="manufactor-photo" width="" height="" src="img/manufactor-icon-metabo.png" alt="логотип производителя: metabo">
+              <img class="manufactor-photo" width="204" height="69" src="img/manufactor-icon-metabo.png" alt="логотип производителя: metabo">
             </a>
           </li>
         </ul>
@@ -367,7 +367,8 @@
           <p>Вы можете забрать товар сами,<br>
           заехав в наш офис:</p>
           <div class="wrapper-min-map">
-            <img class="min-static-map" width="300" height="158" src="img/main-min-map.jpg" alt="наш адрес: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
+            <iframe class="iframe-min-map" src="https://yandex.by/map-widget/v1/-/CBqkv-QbpB" width="300" height="158"></iframe>
+            <div class="transparent-btn"></div>
           </div>
           <a href="#" class="btn btn-write-us" aria-label="кнопка открыть форму отправки письма">Заблудились? Напишите нам!</a>
         </div>
@@ -459,6 +460,21 @@
       </div>
     </section>
   </footer>
+  <div class="modal-cart">
+    <h2 class="visually-hidden">окно корзины</h2>
+    <button class="modal-cart-close" type="button" aria-label="кнопка закрыть">Закрыть</button>
+    <div class="modal-text-wrapper">
+      <svg xmlns="http://www.w3.org/2000/svg" width="66" height="66">
+        <circle fill="#63A63E" cx="33" cy="33" r="33"/>
+        <path fill="#FFF" d="M49.641 21.066a1.003 1.003 0 0 0-1.414 0L29.788 39.504a1.003 1.003 0 0 1-1.414 0l-8.14-8.139a1.003 1.003 0 0 0-1.414 0L15.285 34.9a1.003 1.003 0 0 0 0 1.414l13.089 13.09a1.003 1.003 0 0 0 1.414 0l3.536-3.536 1.414-1.414 18.438-18.438a1.003 1.003 0 0 0 0-1.414l-3.535-3.536z"/>
+      </svg>
+      <p class="modal-text">Товар добавлен в корзину!</p>
+    </div>
+    <div class="modal-button-wrapper">
+      <a class="btn btn-modal-end" href="#">Оформить заказ</a>
+      <a class="btn btn-modal-continue" href="#">Продолжить покупки</a>
+    </div>
+  </div>
   <div class="modal-write">
       <h2 class="visually-hidden">Форма отправки письма</h2>
       <button class="modal-write-close" type="button" aria-label="кнопка закрыть форму отправки письма">Закрыть</button>
@@ -480,7 +496,7 @@
   </div>
   <div class="modal-map">
     <button class="modal-map-close" type="button" aria-label="кнопка закрыть карту">Закрыть</button>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651595!2d30.320894616394252!3d59.93879418187624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExODY!5e0!3m2!1sru!2sby!4v1526294155331" width="940" height="446" allowfullscreen frameborder="0" style="border:0"></iframe>
+      <iframe class="iframe-big-map" src="https://yandex.by/map-widget/v1/-/CBqkv-QbpB" width="940" height="446"></iframe>
   </div>
   <script src="js/script.js"></script>
   <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
